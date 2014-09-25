@@ -1,0 +1,9 @@
+Income Tax Calculator
+
+The application will determine the amount of taxes owed by filing status and yearly income amount.
+First, select filing status. Secondly enter yearly income amount. Click or press "Calculate" button.
+Amount of taxes will be displayed.
+
+Developed by Jason Shepherd
+Using Android Studio Beta 0.8.9
+September 24, 2014
