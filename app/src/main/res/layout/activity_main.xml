@@ -2,14 +2,125 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:background="@drawable/coins"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calculate Now"
+        android:text="Calculate"
         android:id="@+id/button"
+        android:layout_toEndOf="@+id/imageView"
+        android:clickable="true"
+        android:onClick="onButtonCalculateClick"
+        android:textSize="36dp"
+        android:layout_above="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/yearlyIncome"
+        android:layout_toEndOf="@+id/imageView"
+        android:textColor="#ffffffff"
+        android:background="#c7323232"
+        android:textSize="48sp"
+        android:layout_above="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="textEnd"
+        android:text="0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/taxesOwed"
+        android:layout_toEndOf="@+id/imageView"
+        android:textColor="#ffffffff"
+        android:layout_toStartOf="@+id/yearlyIncome"
+        android:clickable="false"
+
+        android:textAlignment="textEnd"
+        android:textSize="36dp"
+        android:layout_marginBottom="41dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="0" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSingle"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="46dp" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/single"
+        android:layout_gravity="bottom"
+        android:onClick="onButtonSingleClick"
+        android:clickable="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonJointly"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/marriedjointly"
+        android:onClick="onButtonJointlyClick"
+        android:clickable="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSeperate"
+        android:layout_above="@+id/yearlyIncome"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/marriedseperate"
+        android:onClick="onButtonSeperateClick"
+        android:clickable="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonHousehold"
+        android:layout_above="@+id/yearlyIncome"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/headhousehold"
+        android:onClick="onButtonHouseholdClick"
+        android:clickable="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Taxes Owed"
+        android:id="@+id/textView2"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_above="@+id/taxesOwed"
+        android:layout_alignRight="@+id/taxesOwed"
+        android:layout_alignEnd="@+id/taxesOwed"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/white" />
+
 </RelativeLayout>
