@@ -21,6 +21,8 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Button btn0 = (Button) findViewById(R.id.buttonSingle);
+        btn0.setBackgroundResource(R.drawable.singleclicked);
 
         //calculateButton = (Button) findViewById(R.id.button);
 
@@ -35,7 +37,8 @@ public class MainActivity extends Activity {
 
     public void onButtonSingleClick(View v) {
         status = 0;
-        Toast.makeText(getApplicationContext(), "Filing Single", Toast.LENGTH_SHORT).show();
+        TextView statusText = (TextView)findViewById(R.id.statusView);
+        statusText.setText("Filing Single");
 
         Button btn0 = (Button) findViewById(R.id.buttonSingle);
         btn0.setBackgroundResource(R.drawable.singleclicked);
@@ -50,7 +53,8 @@ public class MainActivity extends Activity {
 
     public void onButtonJointlyClick(View v) {
         status = 1;
-        Toast.makeText(getApplicationContext(), "Married Filing Jointly", Toast.LENGTH_SHORT).show();
+        TextView statusText = (TextView)findViewById(R.id.statusView);
+        statusText.setText("Married Filing Jointly");
 
         Button btn0 = (Button) findViewById(R.id.buttonJointly);
         btn0.setBackgroundResource(R.drawable.marriedjointlyclicked);
@@ -65,7 +69,8 @@ public class MainActivity extends Activity {
 
     public void onButtonSeperateClick(View v) {
         status = 2;
-        Toast.makeText(getApplicationContext(), "Married Filing Seperately", Toast.LENGTH_SHORT).show();
+        TextView statusText = (TextView)findViewById(R.id.statusView);
+        statusText.setText("Married Filing Seperately");
 
         Button btn0 = (Button) findViewById(R.id.buttonSeperate);
         btn0.setBackgroundResource(R.drawable.marriedseperateclicked);
@@ -80,7 +85,8 @@ public class MainActivity extends Activity {
 
     public void onButtonHouseholdClick(View v) {
         status = 3;
-        Toast.makeText(getApplicationContext(), "Head of Household", Toast.LENGTH_SHORT).show();
+        TextView statusText = (TextView)findViewById(R.id.statusView);
+        statusText.setText("Head of Household");
 
         Button btn0 = (Button) findViewById(R.id.buttonHousehold);
         btn0.setBackgroundResource(R.drawable.headhouseholdclicked);
@@ -190,11 +196,9 @@ public class MainActivity extends Activity {
 
         else {}
 
-        // Do the rest
-        total = ((tax * 100) / 100.0);
-        t1.setText("$" + Double.toString(total));
-
-        //t1.setText("This is a test");
+         // Do the rest
+         total = ((tax * 100) / 100.0);
+         t1.setText("$" + Double.toString(total));
     }
 
     @Override
