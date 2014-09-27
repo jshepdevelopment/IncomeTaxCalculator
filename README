@@ -7,7 +7,7 @@ The application will determine the amount of taxes owed by filing status and yea
 First, select filing status. Secondly enter yearly income amount. Click or press "Calculate" button.
 Amount of taxes will be displayed.
 
-This is fr demonstration only. Please hire an expert to do your taxes. Application uses the
+This is for demonstration only. Please hire an expert to do your taxes. Application uses the
 following values to figure annual taxes:
 
 MTR,  Single,              Married Filing Jointly, Married Filing Separately, Head of Household
@@ -22,6 +22,6 @@ MTR is Marginal Tax Rate
 
 Change Log:
 09.29.2014:
-UI updated. Documentation completed.
+User interface and documentation updated.
 09.28.2014:
 Added landscape mode support.
