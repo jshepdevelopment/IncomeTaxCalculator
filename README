@@ -7,6 +7,21 @@ The application will determine the amount of taxes owed by filing status and yea
 First, select filing status. Secondly enter yearly income amount. Click or press "Calculate" button.
 Amount of taxes will be displayed.
 
+This is fr demonstration only. Please hire an expert to do your taxes. Application uses the
+following values to figure annual taxes:
+
+MTR,  Single,              Married Filing Jointly, Married Filing Separately, Head of Household
+10%,  $0 – $8,350,         $0 – $16,700,           $0 – $8,350,                $0 – $11,950
+15%,  $18,351– $33,950,    $16,701 – $67,900,      $8,351 – $33,950,           $11,951 – $45,500
+25%,  $33,951 – $82,250,   $67,901 – $137,050,     $33,951 – $68,525,          $45,501 – $117,450
+28%,  $82,251 – $171,550,  $137,051 – $208,850,    $68,526 – $104,425,         $117,451 – $190,200
+33%,  $171,551 – $372,950, $208,851 – $372,950,    $104,426 – $186,475,        $190,201 – $372,950
+35%,  $372,951˛+,          $372,951˛+,             $186,476˛+, $372,951˛+,
+
+MTR is Marginal Tax Rate
+
 Change Log:
+09.29.2014:
+UI updated. Documentation completed.
 09.28.2014:
 Added landscape mode support.
